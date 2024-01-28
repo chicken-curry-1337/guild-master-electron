@@ -8,9 +8,14 @@
     "noImplicitAny": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "jsx": "react",
     "outDir": "dist",
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "paths": {
+      "@lib": ["./src"],
+      "@lib/*": ["./src/lib/*"]
+    }
   },
   "include": ["src"]
 }
